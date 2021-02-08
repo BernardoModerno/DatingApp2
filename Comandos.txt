@@ -1,0 +1,12 @@
+dotnet new sln
+dotnet new webapi -o API
+dotnet sln add API
+dotnet dev-certs https --trust
+Instalei o EF Core SQLite
+Instalei o dotnet ef globalmente:
+dotnet tool install --global dotnet-ef --version 5.0.2
+Na pasta API, rodei o comando de migração e update:
+dotnet ef migrations add InitialCreate -o Data/Migrations
+dotnet ef database update
+ng new client 
+
