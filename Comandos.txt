@@ -11,4 +11,6 @@ dotnet ef database update
 ng new client 
 ng add ngx-bootstrap
 npm i font-awesome
+dotnet ef migrations add Password 
+dotnet ef database update
 
